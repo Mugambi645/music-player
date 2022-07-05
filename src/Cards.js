@@ -33,21 +33,8 @@ export default class Cards extends Component {
       </div>
     </Col>
     
-    <Col xs lg="6">
-    <div className="card">
-        <img src="" alt="" />
-        <div className="card-body">
-          <h2>Personal account</h2>
-          <p>
-            Don't have a spotify account?Create a personal account to access the platform.
-            Don't have a spotify account?Create a personal account to access the platform.
-          </p>
-          < Button href={AUTH_URL} variant="outline-primary">Create account</Button>{' '}
-         
-          <a  href="">Sign in</a>
-        </div>
-      </div>
-    </Col>
+ 
+   
   </Row>
 </Container>
       

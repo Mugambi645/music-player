@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react"
 import useAuth from "./useAuth"
+import {Row, Col, Card,Button,Navbar } from 'react-bootstrap';
 import Player from "./Player"
 import TrackSearchResult from "./TrackSearchResult"
 import { Container, Form } from "react-bootstrap"
 import SpotifyWebApi from "spotify-web-api-node"
 import axios from "axios"
-
+import "./dashboard.css"
 const spotifyApi = new SpotifyWebApi({
   clientId: "5848ef9895ad47f390503c687a0179fe",
 })
@@ -74,14 +75,17 @@ export default function Dashboard({ code }) {
   }, [search, accessToken])
 
   return (
-    <Container className="d-flex flex-column py-2" style={{ height: "100vh" }}>
+
+<div>
+
+    <Container fluid className="d-flex flex-column py-5" style={{ height: "100vh" }}>
       <Form.Control
         type="search"
         placeholder="Search Songs/Artists"
         value={search}
         onChange={e => setSearch(e.target.value)}
       />
-      <div className="flex-grow-1 my-2" style={{ overflowY: "auto" }}>
+      <div className="flex-grow-6 my-1" style={{ overflowY: "auto" }}>
         {searchResults.map(track => (
           <TrackSearchResult
             track={track}
@@ -90,7 +94,7 @@ export default function Dashboard({ code }) {
           />
         ))}
         {searchResults.length === 0 && (
-          <div className="text-center" style={{ whiteSpace: "pre" }}>
+          <div className="text-center" style={{ whiteSpace: "pre",  }}>
             {lyrics}
           </div>
         )}
@@ -99,5 +103,9 @@ export default function Dashboard({ code }) {
         <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
       </div>
     </Container>
+
+    
+    
+    </div>
   )
 }
