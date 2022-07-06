@@ -2,7 +2,7 @@ import "./styles.css";
 import React, { Component } from "react";
 import { Container, Row, Col, Card,Button } from 'react-bootstrap';
 const AUTH_URL =
-  "https://accounts.spotify.com/authorize?client_id=e6a266afde9342d1981c4e94a05b1f68&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state"
+  "https://accounts.spotify.com/authorize?client_id=e6a266afde9342d1981c4e94a05b1f68&response_type=code&redirect_uri=https://music-backend4.herokuapp.com/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state"
 
 export default class Cards extends Component {
   render() {
