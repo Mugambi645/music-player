@@ -26,7 +26,7 @@ export default class Cards extends Component {
           <h2>Login with spotify</h2>
           <p>
             Got a spotify account?If yes,Login now to access unlimited music streams   
-            Don't have a spotify account?Create a personal account to access the platform.   
+              
             </p>
           < Button href={AUTH_URL} variant="outline-primary">Continue authorization</Button>{' '}
         </div>
