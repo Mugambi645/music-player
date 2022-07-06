@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a music web player that streams music using spotify web api.To use it you log in and search music.However you can only view lyrics if you dont have a spotify premium account
 
 ## Available Scripts
 
