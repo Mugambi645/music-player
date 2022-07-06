@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
 This is a music web player that streams music using spotify web api.To use it you log in and search music.However you can only view lyrics if you dont have a spotify premium account
-## Screenshots
-![recording.mkv](recording.mkv/)
+## preview
+- Click to download video preview![recording.mkv](recording.mkv/)
 <video src='./recording.mkv' width=180/>
 ## Available Scripts
 
